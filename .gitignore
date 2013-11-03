@@ -1,2 +1,4 @@
 .vagrant/
 parameters.rb
+iso/
+build/

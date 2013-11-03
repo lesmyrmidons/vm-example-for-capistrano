@@ -1,0 +1,3 @@
+[submodule "vagrant-debian-wheezy-64"]
+	path = vagrant-debian-wheezy-64
+	url = https://github.com/dotzero/vagrant-debian-wheezy-64.git

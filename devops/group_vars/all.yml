@@ -6,10 +6,16 @@ url_apt_key: "http://keyserver.ubuntu.com/pks/lookup?op=get&search="
 ntpserver: '0.fr.pool.ntp.org'
 
 web:
-  httpd_port: 80
-  domain: dev.test-deploy.com
-  project_path: /data/dev.test-deploy.com
-  directory_index: app.php
+  exercise1:
+    httpd_port: 80
+    domain: exercise1-deploy.com
+    project_path: /data/exercise1
+    directory_index: index.php
+  exercise2:
+    httpd_port: 80
+    domain: exercise2-deploy.com
+    project_path: /data/exercise2
+    directory_index: app.php
 
 mariadb:
   root_password: dev

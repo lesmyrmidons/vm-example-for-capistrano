@@ -9,7 +9,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define "sf" do |sf_config|
     sf_config.vm.box = "wheezy64"
     sf_config.vm.box_url = "http://downloads.shadoware.org/wheezy64.box"
-    sf_config.vm.network :"private_network", ip: "192.168.40.10"
+    sf_config.vm.network :"private_network", ip: "192.168.40.20"
     sf_config.vm.synced_folder PATH_SHARE_FOLDER, PATH_MOUNT_FOLDER, :nfs => true
 
     config.vm.provider :virtualbox do |v|

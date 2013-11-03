@@ -13,7 +13,7 @@
   roles:
     - common
 
-- hosts: sfserver
+- hosts: cap-server
   user: vagrant
   sudo: yes
 
@@ -21,9 +21,7 @@
     - group_vars/all.yml
 
   roles:
-    - mongodb
     - web
     - php5
     - mariadb
     - composer
-    - ajenti

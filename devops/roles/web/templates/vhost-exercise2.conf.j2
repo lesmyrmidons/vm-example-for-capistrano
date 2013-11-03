@@ -1,0 +1,13 @@
+<VirtualHost *:{{ web.exercise2.httpd_port }}>
+    ServerName {{ web.exercise2.domain }}
+    DocumentRoot {{ web.exercise2.project_path }}/web
+
+    DirectoryIndex {{ web.exercise2.directory_index }}
+
+    <Directory "{{ web.exercise2.project_path }}/web">
+        Options -Indexes FollowSymLinks SymLinksifOwnerMatch
+        AllowOverride All
+        Allow from All
+    </Directory>
+
+</VirtualHost>
